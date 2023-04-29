@@ -1,0 +1,25 @@
+.container-2{
+    height: 150px;
+    width:300px;
+    background-color: #9f5f80;
+    margin: 2px;
+    padding: 4px;
+    border: 1px solid  black;
+    flex-grow: 1;
+    text-align: left;
+}
+.quesClass{
+    margin-left: 6px;
+    color: white;
+}
+.OptionBtn {
+    font-size: large;
+    margin: 3px;
+    padding: 15px;
+    background-color: #ffba93;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+.OptionBtn:hover{
+    cursor: pointer;
+}
