@@ -86,7 +86,7 @@ function App() {
         :
         (
           <div className='ResultDiv'>
-            <h1>You have answered {questionsCorrect} / {questions.length} Correctly</h1>
+            <h1 className='ResultText'>You have answered {questionsCorrect} / {questions.length} Correctly</h1>
             <button className='Startbtn' onClick={handleStartQuiz}>Start Quiz</button>
           </div>  
         )
