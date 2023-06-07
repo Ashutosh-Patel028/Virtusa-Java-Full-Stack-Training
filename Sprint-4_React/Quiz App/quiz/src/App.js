@@ -9,6 +9,7 @@ function App() {
   
   function handleStartQuiz(){
     setShowQuestions(true);
+    setShowQuiz(false);
   }
   const questions = [
     {
@@ -61,7 +62,7 @@ function App() {
       {
         !showQuestion ? 
         (
-        <button className='Startbtn' onClick={handleStartQuiz}>Start Quiz</button>
+          <button className='Startbtn' onClick={handleStartQuiz}>Start Quiz</button>
         )
         :
         showQuiz===false?
@@ -86,8 +87,8 @@ function App() {
         (
           <div className='ResultDiv'>
             <h1>You have answered {questionsCorrect} / {questions.length} Correctly</h1>
-            <button onClick={handleStartQuiz}>Start Quiz</button>
-          </div>
+            <button className='Startbtn' onClick={handleStartQuiz}>Start Quiz</button>
+          </div>  
         )
       }
     </div>
